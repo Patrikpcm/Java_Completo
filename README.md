@@ -1,1 +1,1 @@
-Esse repositório contem arquivos do curso completo de Java e OO, UML, JDBC, JavaFX, Spring Boot, JPA, Hibernate, MySQL, MongoDB, entre outros arquivos e projetos desenvolvidos durante o curso!
+Esse repositório contem arquivos do curso completo de Java e OO, UML, JDBC, JavaFX, Spring Boot, JPA, Hibernate, MySQL, MongoDB, entre outros arquivos e projetos desenvolvidos durante o curso.
