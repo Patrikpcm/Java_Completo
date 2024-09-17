@@ -6,7 +6,7 @@
  * str.Split("") "Dividir a string com base num separador"
  */
 
-public class funcoes_string {
+public class Funcoes_string {
     public static void main(String[] args) {
         String original = "abcde FGHIJ ABC abc DEFG";
 

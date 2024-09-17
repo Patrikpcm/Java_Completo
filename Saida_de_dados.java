@@ -1,6 +1,6 @@
 import java.util.Locale;
 
-public class saida_de_dados {
+public class Saida_de_dados {
     public static void main(String[] args){
         int y = 32;
         double x = 3.14159234;

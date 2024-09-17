@@ -1,6 +1,6 @@
 import java.util.Locale;
 
-public class funcoes_matematicas {
+public class Funcoes_matematicas {
     public static void main(String[] args) {
         double R = Math.sqrt(64); //raiz quadrada
         double P = Math.pow(3.0, 2.0); //potencia 3²
