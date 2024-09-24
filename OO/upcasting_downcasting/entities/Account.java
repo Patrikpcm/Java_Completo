@@ -28,6 +28,10 @@ public class Account {
         this.holder = holder;
     }
 
+    public Double getBalance() {
+        return balance;
+    }
+
     public void withdraw(double amount){//saque
         balance -= amount;
     }

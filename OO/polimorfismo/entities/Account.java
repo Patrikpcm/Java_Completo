@@ -1,4 +1,4 @@
-package OO.heranca.entities;
+package OO.polimorfismo.entities;
 
 public class Account {
     private Integer number;
@@ -27,14 +27,15 @@ public class Account {
     public void setHolder(String holder) {
         this.holder = holder;
     }
-    
+
     public Double getBalance() {
         return balance;
     }
 
     public void withdraw(double amount){//saque
-        balance -= amount;
+        balance -= amount + 5.0; //valor de taxa de 5.0
     }
+
     public void deposit(double amount){//depósito
         balance += amount;
     }
