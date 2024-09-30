@@ -1,4 +1,4 @@
-package Interfaces.Solucao_sem_interface.application;
+package Interfaces.Solucao_com_interface.application;
 
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
@@ -6,10 +6,10 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-import Interfaces.Solucao_sem_interface.model.entities.CarRental;
-import Interfaces.Solucao_sem_interface.model.entities.Vehicle;
-import Interfaces.Solucao_sem_interface.model.services.BrazilTaxService;
-import Interfaces.Solucao_sem_interface.model.services.RentalService;
+import Interfaces.Solucao_com_interface.model.entities.CarRental;
+import Interfaces.Solucao_com_interface.model.entities.Vehicle;
+import Interfaces.Solucao_com_interface.model.services.BrazilTaxService;
+import Interfaces.Solucao_com_interface.model.services.RentalService;
 
 public class Program { 
     public static void main(String[] args) {
@@ -36,6 +36,9 @@ public class Program {
         RentalService rentalService = new RentalService(pricePerDay,
                                                         pricePerHour,
                                                         new BrazilTaxService());
+        /* Aqui temos um upcastin da classe BrazilTaxSerice que é um subtipo da classe
+         TaxService. Caso o serviço de taxas mude no futuro, o único ponto a ser modificado
+         em todo o programa será aqui, não precisando mexer nas demais classes. */
 
         rentalService.processInvoice(cr);
 
