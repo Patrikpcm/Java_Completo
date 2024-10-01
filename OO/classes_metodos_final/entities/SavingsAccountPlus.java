@@ -1,14 +1,14 @@
 package OO.classes_metodos_final.entities;
 import OO.classes_metodos_final.entities.SavingsAccount;
 
-public class SavingsAccountPlus extends SavingsAccount { //aqui já apresenta erro, informando que não pode ser subclasse
+//public class SavingsAccountPlus extends SavingsAccount { //aqui já apresenta erro, informando que não pode ser subclasse
     
-    @Override
-    public void withdraw(double amount){ //final no método tb gerará erro, não pode ser reescrito
-        balance -= amount + 2.0;
-    }
+ //   @Override
+ //   public void withdraw(double amount){ //final no método tb gerará erro, não pode ser reescrito
+ //       balance -= amount + 2.0;
+  //  }
 
-}
+//}
 
 /**
  * POR QUÊ UTILIZAR FINAL?
