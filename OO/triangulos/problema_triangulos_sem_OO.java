@@ -38,5 +38,6 @@ public class problema_triangulos_sem_OO {
         else
             System.out.println("Large area: Y");
         
+        sc.close();
     }
 }

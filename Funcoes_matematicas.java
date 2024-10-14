@@ -1,5 +1,3 @@
-import java.util.Locale;
-
 public class Funcoes_matematicas {
     public static void main(String[] args) {
         double R = Math.sqrt(64); //raiz quadrada

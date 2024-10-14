@@ -6,6 +6,7 @@ public class Saida_de_dados {
         double x = 3.14159234;
         String nome = "Tenório";
 
+        System.out.println(nome);
         System.out.println(y);
         System.out.println(x); 
         System.out.printf("%.2f%n", x); //saída formatada, mas o separador é uma vírgula por motívos de linguagem pt-br.
