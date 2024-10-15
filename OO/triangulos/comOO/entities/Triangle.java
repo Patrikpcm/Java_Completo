@@ -1,4 +1,4 @@
-package entities;
+package OO.triangulos.comOO.entities;
 
 public class Triangle{
     public double A;

@@ -1,4 +1,4 @@
-package JDBC.JDBC1.db;
+package JDBC.DBConnection.src.JDBC;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -24,6 +24,7 @@ public class DB {
             try{//tenta a conexão
                 Properties props = loadProperties(); //pega as propriedades do banco
                 String url = props.getProperty("dburl"); //pega a linha dburl do arquivo
+                //System.out.println("String do banco: " + url);
                 conn = DriverManager.getConnection(url, props); //obtem a conexão com o banco e atribui a conn
                 //basicamente instanciamos um objeto que é a conexão com o banco
             }
@@ -48,7 +49,7 @@ public class DB {
 
     //MÉTODO PARA CARREGAR AS CONFIGURAÇÕES DA CONEXÃO
     private static Properties loadProperties(){ //carrega as propriedades do arquivo de conexão
-        try(FileInputStream fs = new FileInputStream("JDBC/JDBC1/db.properties")){ //tenta a conexão
+        try(FileInputStream fs = new FileInputStream("JDBC/DBConnection/db.properties")){ //tenta a conexão
             Properties prop = new Properties();
             prop.load(fs);
             return prop;

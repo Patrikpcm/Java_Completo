@@ -1,9 +1,9 @@
-package application;
+package OO.triangulos.comOO.application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Triangle;
+import OO.triangulos.comOO.entities.Triangle;
 
 public class Program {
     public static void main(String[] args) {
