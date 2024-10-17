@@ -1,6 +1,8 @@
 package JDBC.ProjetoDAO.src.model.dao;
 
 import java.util.List;
+
+import JDBC.ProjetoDAO.src.model.entities.Department;
 import JDBC.ProjetoDAO.src.model.entities.Seller;
 
 public interface SellerDao {
@@ -9,5 +11,6 @@ public interface SellerDao {
     void update(Seller obj);
     void deleteById(Integer id);
     Seller findById(Integer id);
-    List<Seller> findALl();
+    List<Seller> findAll();
+    List<Seller> findByDepartment(Department department);
 }
